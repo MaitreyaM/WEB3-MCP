@@ -1,0 +1,4 @@
+fastmcp
+web3
+python-dotenv
+requests
