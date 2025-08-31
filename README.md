@@ -44,7 +44,7 @@ The server requires the following environment variables:
 
 - `WEB3_PROVIDER_URL`: Your Ethereum RPC endpoint (e.g., Infura, Alchemy)
 - `AGENT_PRIVATE_KEY`: Private key for the agent wallet (without 0x prefix)
-- `NETWORK`: Network to use - "sepolia" (default) or "mainnet"
+
 
 ### Network-Specific Addresses
 
