@@ -8,7 +8,7 @@ A Model Context Protocol (MCP) server for Ethereum blockchain operations, deploy
 - **Token Operations**: Get ERC-20 token balances and prices
 - **DeFi Integration**: Wrap ETH to WETH and swap tokens on Uniswap V3
 - **Smart Contract Interaction**: Generic contract function calls
-- **Price Feeds**: Real-time ETH/USD price from Chainlink
+- **Price Feeds**: Real-time ETH/USD price from Chainlink (soon)
 - **Multi-Network Support**: Sepolia testnet and Ethereum mainnet
 
 ## Available Tools
