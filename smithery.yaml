@@ -1,0 +1,41 @@
+name: web3-mcp-server
+description: Web3 MCP server for Ethereum blockchain operations
+
+startCommand:
+  type: streamable-http
+  configSchema:
+    type: object
+    properties:
+      web3_provider_url:
+        type: string
+        description: Ethereum RPC endpoint URL (e.g., Infura, Alchemy)
+      agent_private_key:
+        type: string
+        description: Private key for the agent wallet (without 0x prefix)
+        format: password
+      network:
+        type: string
+        description: Network to use (sepolia or mainnet)
+        enum: ["sepolia", "mainnet"]
+        default: "sepolia"
+    required:
+      - web3_provider_url
+      - agent_private_key
+
+# Streamable HTTP server configuration
+streamableHttp:
+  port: 3000
+  healthCheck:
+    path: /health
+    interval: 30s
+    timeout: 5s
+    retries: 3
+
+# Environment variables
+env:
+  - name: WEB3_PROVIDER_URL
+    value: "{{.web3_provider_url}}"
+  - name: AGENT_PRIVATE_KEY
+    value: "{{.agent_private_key}}"
+  - name: NETWORK
+    value: "{{.network}}"
