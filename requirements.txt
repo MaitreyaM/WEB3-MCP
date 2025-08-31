@@ -1,4 +1,4 @@
 fastmcp
-web3
+web3[standard]
 python-dotenv
 requests
