@@ -119,7 +119,6 @@ docker run -p 3000:3000 \
 
 ## Security Considerations
 
-⚠️ **IMPORTANT**: Never commit private keys or sensitive credentials to version control.
 
 - Use environment variables for all sensitive data
 - Consider using a dedicated wallet for the MCP server
@@ -175,6 +174,4 @@ For blockchain-related issues, check:
 - Network gas prices and congestion
 - Contract addresses and ABIs
 
-## License
 
-This project is part of the MCP-a2a-foundation repository.
