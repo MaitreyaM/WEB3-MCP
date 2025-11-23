@@ -172,6 +172,6 @@ For deployment issues on Smithery.ai, refer to their documentation and support c
 For blockchain-related issues, check:
 - Your RPC provider's status page
 - Network gas prices and congestion
-- Contract addresses and ABIs
+- Contract addresses and ABIs.
 
 
